@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1652875577034" clover="3.2.0">
-  <project timestamp="1652875577034" name="All files">
-    <metrics statements="18" coveredstatements="18" conditionals="31" coveredconditionals="30" methods="6" coveredmethods="6" elements="55" coveredelements="54" complexity="0" loc="18" ncloc="18" packages="1" files="1" classes="1"/>
+<coverage generated="1652876090154" clover="3.2.0">
+  <project timestamp="1652876090154" name="All files">
+    <metrics statements="18" coveredstatements="18" conditionals="34" coveredconditionals="33" methods="6" coveredmethods="6" elements="58" coveredelements="57" complexity="0" loc="18" ncloc="18" packages="1" files="1" classes="1"/>
     <file name="template.js" path="C:\Users\mathi\TicTacToeAttemptTwo\src\template.js">
-      <metrics statements="18" coveredstatements="18" conditionals="31" coveredconditionals="30" methods="6" coveredmethods="6"/>
+      <metrics statements="18" coveredstatements="18" conditionals="34" coveredconditionals="33" methods="6" coveredmethods="6"/>
       <line num="2" count="1" type="stmt"/>
       <line num="3" count="1" type="stmt"/>
       <line num="7" count="3" type="cond" truecount="2" falsecount="0"/>
@@ -19,9 +19,9 @@
       <line num="29" count="4" type="cond" truecount="11" falsecount="0"/>
       <line num="32" count="3" type="stmt"/>
       <line num="33" count="1" type="stmt"/>
-      <line num="37" count="1" type="cond" truecount="4" falsecount="1"/>
-      <line num="38" count="1" type="stmt"/>
-      <line num="42" count="1" type="stmt"/>
+      <line num="37" count="2" type="cond" truecount="7" falsecount="1"/>
+      <line num="39" count="2" type="stmt"/>
+      <line num="43" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

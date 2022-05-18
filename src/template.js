@@ -34,7 +34,8 @@ function checkHorizontalLineForAWinner(ticTacToeBoard, currentPlayer){
 }
 
 function checkDiagonalLineForAWinner(ticTacToeBoard, currentPlayer){
-    if (ticTacToeBoard[0] == currentPlayer && ticTacToeBoard[4] == currentPlayer && ticTacToeBoard[8] == currentPlayer){
+    if (ticTacToeBoard[0] == currentPlayer && ticTacToeBoard[4] == currentPlayer && ticTacToeBoard[8] == currentPlayer ||
+        ticTacToeBoard[2] == currentPlayer && ticTacToeBoard[4] == currentPlayer && ticTacToeBoard[6] == currentPlayer){
         return 'Player ' + currentPlayer + ' has won'
     }
 }

@@ -92,7 +92,7 @@ Overview of atomic behaviors:
 
 - Diagonal line with same marks --> player wins
    ✔ -  ['X','','','','X','','','','X'] --> Player X wins
-    - ['','','O','','O','','O','',''] --> Player O wins
+   ✔ - ['','','O','','O','','O','',''] --> Player O wins
     - ['','','','','','X','','','X'] --> No winner found
 
 - Board is full, no other winning condition met --> draw
