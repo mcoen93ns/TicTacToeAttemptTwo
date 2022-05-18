@@ -102,6 +102,7 @@ Overview of atomic behaviors:
 - Find a random empty cell to place a mark on
     ✔ - empty board --> >= 0 && <= 8
     ✔- ['X', 'O', X', 'X', '', 'X', O', X', 'O'] --> 4
+    - REFACTOR TO BE TRULY RANDOM
 
 - Print the board in the console log
     🛠- hello world
