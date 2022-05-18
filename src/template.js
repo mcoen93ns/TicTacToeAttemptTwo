@@ -11,7 +11,10 @@ function playerPlacesHisMarkOnTheBoard(ticTacToeBoard, playerMark, cellOnTheBoar
 }
 
 function switchCurrentPlayer(currentPlayer) {
-    return 'O'
+    if (currentPlayer == 'X') {
+        return currentPlayer = 'O'
+    }
+    return currentPlayer = 'X'
 }
 
 module.exports = {createAnEmptyTicTacToeBoard, playerPlacesHisMarkOnTheBoard, switchCurrentPlayer}

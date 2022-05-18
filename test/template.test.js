@@ -26,5 +26,9 @@ describe('This is a testsuite that describes the working of a game called TicTac
             var currentPlayer = 'X'
             expect(switchCurrentPlayer(currentPlayer)).toEqual('O')
         });
+        it('Turn 2: player O, Turn 3: Player X', () => {
+            var currentPlayer = 'O'
+            expect(switchCurrentPlayer(currentPlayer)).toEqual('X')
+        });
     });
 });
