@@ -43,7 +43,7 @@ function checkDiagonalLineForAWinner(ticTacToeBoard, currentPlayer){
 function checkForDraw(ticTacToeBoard){
     if (ticTacToeBoard.indexOf('') == -1) {
         return 'Draw'
-    }
+    } else return 'No draw'
 }
 
 module.exports = {createAnEmptyTicTacToeBoard, playerPlacesHisMarkOnTheBoard, switchCurrentPlayer, checkVerticalLineForAWinner, checkHorizontalLineForAWinner, checkDiagonalLineForAWinner, checkForDraw}

@@ -15,7 +15,7 @@ FNDA:2,switchCurrentPlayer
 FNDA:4,checkVerticalLineForAWinner
 FNDA:4,checkHorizontalLineForAWinner
 FNDA:3,checkDiagonalLineForAWinner
-FNDA:1,checkForDraw
+FNDA:2,checkForDraw
 DA:2,1
 DA:3,1
 DA:7,3
@@ -34,11 +34,12 @@ DA:33,1
 DA:37,3
 DA:39,2
 DA:40,1
-DA:44,1
+DA:44,2
 DA:45,1
+DA:46,1
 DA:49,1
-LF:21
-LH:21
+LF:22
+LH:22
 BRDA:7,0,0,2
 BRDA:7,0,1,1
 BRDA:14,1,0,1
@@ -74,7 +75,7 @@ BRDA:37,7,3,2
 BRDA:37,7,4,1
 BRDA:37,7,5,1
 BRDA:44,8,0,1
-BRDA:44,8,1,0
+BRDA:44,8,1,1
 BRF:36
-BRH:35
+BRH:36
 end_of_record

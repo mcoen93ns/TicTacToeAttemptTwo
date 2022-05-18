@@ -98,6 +98,10 @@ describe('This is a testsuite that describes the working of a game called TicTac
                 var ticTacToeBoard = ['X', 'O', 'X', 'O', 'X', 'X', 'O', 'X', 'O']
                 expect(checkForDraw(ticTacToeBoard)).toEqual('Draw')
             });
+            it('One cell empty --> no draw', () => {
+                var ticTacToeBoard = ['X', 'O', 'X', 'O', '', 'X', 'O', 'X', 'O']
+                expect(checkForDraw(ticTacToeBoard)).toEqual('No draw')
+            });
         });
     });
 });

@@ -97,5 +97,6 @@ Overview of atomic behaviors:
 
 - Board is full, no other winning condition met --> draw
     ✔- ['X', 'O', X', 'O', 'X', 'X', O', X', 'O'] --> draw
+    ✔- ['X', 'O', X', '', 'X', 'X', O', X', 'O'] --> no draw
 
 - Print the board in the console log
