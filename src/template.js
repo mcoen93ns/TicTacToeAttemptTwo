@@ -4,8 +4,10 @@ function createAnEmptyTicTacToeBoard(emptyTicTacToeBoard) {
 }
 
 function playerPlacesHisMarkOnTheBoard(ticTacToeBoard, playerMark, cellOnTheBoard){
-    ticTacToeBoard[cellOnTheBoard] = playerMark
-    return ticTacToeBoard
+    if (ticTacToeBoard[cellOnTheBoard] == ''){
+        ticTacToeBoard[cellOnTheBoard] = playerMark
+        return ticTacToeBoard
+    } else return false
 }
 
 module.exports = {createAnEmptyTicTacToeBoard, playerPlacesHisMarkOnTheBoard}
