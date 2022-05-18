@@ -10,4 +10,8 @@ function playerPlacesHisMarkOnTheBoard(ticTacToeBoard, playerMark, cellOnTheBoar
     } else return false
 }
 
-module.exports = {createAnEmptyTicTacToeBoard, playerPlacesHisMarkOnTheBoard}
+function switchCurrentPlayer(currentPlayer) {
+    return 'O'
+}
+
+module.exports = {createAnEmptyTicTacToeBoard, playerPlacesHisMarkOnTheBoard, switchCurrentPlayer}
