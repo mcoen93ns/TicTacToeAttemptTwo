@@ -1,4 +1,4 @@
-const {createAnEmptyTicTacToeBoard, playerPlacesHisMarkOnTheBoard, switchCurrentPlayer, checkVerticalLineForAWinner, checkHorizontalLineForAWinner, checkDiagonalLineForAWinner} = require('../src/template');
+const {createAnEmptyTicTacToeBoard, playerPlacesHisMarkOnTheBoard, switchCurrentPlayer, checkVerticalLineForAWinner, checkHorizontalLineForAWinner, checkDiagonalLineForAWinner, checkForDraw} = require('../src/template');
 
 describe('This is a testsuite that describes the working of a game called TicTacToe', () => {
     describe('An empty game board needs to be created, so that we can play on it', () => {
@@ -91,6 +91,12 @@ describe('This is a testsuite that describes the working of a game called TicTac
                 var ticTacToeBoard = ['X', '', '', '', 'X', 'X', '', '', 'O']
                 var currentPlayer = 'X'
                 expect(checkDiagonalLineForAWinner(ticTacToeBoard, currentPlayer)).toEqual('No winner found')
+            });
+        });
+        describe('When the board is filled, there is a draw', () => {
+            it('Full board --> draw', () => {
+                var ticTacToeBoard = ['X', 'O', 'X', 'O', 'X', 'X', 'O', 'X', 'O']
+                expect(checkForDraw(ticTacToeBoard)).toEqual('Draw')
             });
         });
     });
