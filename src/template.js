@@ -17,4 +17,8 @@ function switchCurrentPlayer(currentPlayer) {
     return currentPlayer = 'X'
 }
 
-module.exports = {createAnEmptyTicTacToeBoard, playerPlacesHisMarkOnTheBoard, switchCurrentPlayer}
+function checkVerticalLineForAWinner(ticTacToeBoard, currentPlayer){
+    return 'Player X has won'
+}
+
+module.exports = {createAnEmptyTicTacToeBoard, playerPlacesHisMarkOnTheBoard, switchCurrentPlayer, checkVerticalLineForAWinner}

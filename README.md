@@ -79,6 +79,10 @@ Overview of atomic behaviors:
     ✔- Turn 2: player O, Turn 3: Player X
 
 - Vertical line with the same marks --> player wins
+    ✔- ['X','','','X','','','X','',''] --> Player X wins
+    - ['','O','','','O','','','O',''] --> Player O wins
+    - ['','','X','','','X','','','X'] --> Player X wins
+
 - Horizontal line with same marks --> player wins
 - Diagonal line with same marks --> player wins
 - Board is full, no other winning condition met --> draw
