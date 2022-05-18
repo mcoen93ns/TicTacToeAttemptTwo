@@ -33,4 +33,10 @@ function checkHorizontalLineForAWinner(ticTacToeBoard, currentPlayer){
     } else return 'No winner found'
 }
 
-module.exports = {createAnEmptyTicTacToeBoard, playerPlacesHisMarkOnTheBoard, switchCurrentPlayer, checkVerticalLineForAWinner, checkHorizontalLineForAWinner}
+function checkDiagonalLineForAWinner(ticTacToeBoard, currentPlayer){
+    if (ticTacToeBoard[0] == currentPlayer && ticTacToeBoard[4] == currentPlayer && ticTacToeBoard[8] == currentPlayer){
+        return 'Player ' + currentPlayer + ' has won'
+    }
+}
+
+module.exports = {createAnEmptyTicTacToeBoard, playerPlacesHisMarkOnTheBoard, switchCurrentPlayer, checkVerticalLineForAWinner, checkHorizontalLineForAWinner, checkDiagonalLineForAWinner}

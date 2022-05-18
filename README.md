@@ -91,5 +91,9 @@ Overview of atomic behaviors:
     ✔- ['','','','','','','X','','X'] --> No winner found
 
 - Diagonal line with same marks --> player wins
+   ✔ - ['X','','','','X','','','','X'] --> Player X wins
+    - ['','','O','','O','','O','',''] --> Player O wins
+    - ['','','','','','X','','','X'] --> No winner found
+
 - Board is full, no other winning condition met --> draw
 - Print the board in the console log
