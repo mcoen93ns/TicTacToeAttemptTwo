@@ -27,7 +27,8 @@ function checkVerticalLineForAWinner(ticTacToeBoard, currentPlayer){
 
 function checkHorizontalLineForAWinner(ticTacToeBoard, currentPlayer){
     if (ticTacToeBoard[0] == currentPlayer && ticTacToeBoard[1] == currentPlayer && ticTacToeBoard[2] == currentPlayer ||
-        ticTacToeBoard[3] == currentPlayer && ticTacToeBoard[4] == currentPlayer && ticTacToeBoard[5] == currentPlayer) {
+        ticTacToeBoard[3] == currentPlayer && ticTacToeBoard[4] == currentPlayer && ticTacToeBoard[5] == currentPlayer ||
+        ticTacToeBoard[6] == currentPlayer && ticTacToeBoard[7] == currentPlayer && ticTacToeBoard[8] == currentPlayer) {
         return 'Player ' + currentPlayer + ' has won'
     }
 }
