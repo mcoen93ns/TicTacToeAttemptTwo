@@ -76,8 +76,7 @@ Overview of atomic behaviors:
 
 - Players switch turns
     ✔- Turn 1: player X, Turn 2: Player O
-    🛠- Turn 2: player O, Turn 3: Player X
-
+    ✔- Turn 2: player O, Turn 3: Player X
 
 - Vertical line with the same marks --> player wins
 - Horizontal line with same marks --> player wins
