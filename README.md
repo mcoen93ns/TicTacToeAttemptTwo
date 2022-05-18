@@ -86,7 +86,7 @@ Overview of atomic behaviors:
 
 - Horizontal line with same marks --> player wins
     ✔- ['X','X','X','','','','','',''] --> Player X wins
-    - ['','','','O','O','O','','',''] --> Player O wins
+    ✔- ['','','','O','O','O','','',''] --> Player O wins
     - ['','','','','','','X','X','X'] --> Player X wins
     - ['','','','','','','X','','X'] --> No winner found
 
