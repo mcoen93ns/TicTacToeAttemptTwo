@@ -119,4 +119,9 @@ describe('This is a testsuite that describes the working of a game called TicTac
             });
         });
     });
+    describe('The game is being played', () => {
+        describe('The game board should be visible in the logging', () => {
+            
+        });
+    });
 });

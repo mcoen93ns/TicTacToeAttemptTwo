@@ -104,7 +104,7 @@ Overview of atomic behaviors:
     ✔- ['X', 'O', X', 'X', '', 'X', O', X', 'O'] --> 4
 
 - Print the board in the console log
-    - hello world
+    🛠- hello world
     - ['X','','','X','','','X','','']
     - XXX 
       OOO   
