@@ -3,6 +3,10 @@ function createAnEmptyTicTacToeBoard(emptyTicTacToeBoard) {
     return emptyTicTacToeBoard
 }
 
+function findAnEmptyCellOnTheBoard(ticTacToeBoard){
+    return 2
+}
+
 function playerPlacesHisMarkOnTheBoard(ticTacToeBoard, playerMark, cellOnTheBoard){
     if (ticTacToeBoard[cellOnTheBoard] == ''){
         ticTacToeBoard[cellOnTheBoard] = playerMark
@@ -46,4 +50,4 @@ function checkForDraw(ticTacToeBoard){
     } else return 'No draw'
 }
 
-module.exports = {createAnEmptyTicTacToeBoard, playerPlacesHisMarkOnTheBoard, switchCurrentPlayer, checkVerticalLineForAWinner, checkHorizontalLineForAWinner, checkDiagonalLineForAWinner, checkForDraw}
+module.exports = {createAnEmptyTicTacToeBoard, findAnEmptyCellOnTheBoard, playerPlacesHisMarkOnTheBoard, switchCurrentPlayer, checkVerticalLineForAWinner, checkHorizontalLineForAWinner, checkDiagonalLineForAWinner, checkForDraw}

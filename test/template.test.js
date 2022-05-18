@@ -1,4 +1,4 @@
-const {createAnEmptyTicTacToeBoard, playerPlacesHisMarkOnTheBoard, switchCurrentPlayer, checkVerticalLineForAWinner, checkHorizontalLineForAWinner, checkDiagonalLineForAWinner, checkForDraw} = require('../src/template');
+const {createAnEmptyTicTacToeBoard, playerPlacesHisMarkOnTheBoard, switchCurrentPlayer, checkVerticalLineForAWinner, checkHorizontalLineForAWinner, checkDiagonalLineForAWinner, checkForDraw, findAnEmptyCellOnTheBoard} = require('../src/template');
 
 describe('This is a testsuite that describes the working of a game called TicTacToe', () => {
     describe('An empty game board needs to be created, so that we can play on it', () => {
@@ -7,18 +7,28 @@ describe('This is a testsuite that describes the working of a game called TicTac
             expect(createAnEmptyTicTacToeBoard(emptyTicTacToeBoard)).toEqual(['','','','','','','','',''])
         });
     });
-    describe('Players should be able to place their mark in a cell on the board', () => {
-        it('Player X places his mark in the first cell', () => {
-            var ticTacToeBoard = ['', '', '', '', '', '', '', '', '']
-            expect(playerPlacesHisMarkOnTheBoard(ticTacToeBoard, 'X', 0)).toEqual(['X', '', '', '', '', '', '', '', ''])
+    describe('Players should be able to place their mark in an empty cell on the board', () => {
+        describe('An empty cell needs to be found', () => {
+            it('Empty board --> cell 0 till cell 8 available', () => {
+                var ticTacToeBoard = ['', '', '', '', '', '', '', '', '']
+                var emptyCell = findAnEmptyCellOnTheBoard(ticTacToeBoard)
+                var correctValueFound = (emptyCell >= 0 && emptyCell <= 8)
+                expect(correctValueFound).toEqual(true)
+            });
         });
-        it('Player O places his mark in the bottom right cell', () => {
-            var ticTacToeBoard = ['', '', '', '', '', '', '', '', '']
-            expect(playerPlacesHisMarkOnTheBoard(ticTacToeBoard, 'O', 8)).toEqual(['', '', '', '', '', '', '', '', 'O'])
-        });
-        it('Player X cannot place his mark in cell 1, because it is not empty', () => {
-            var ticTacToeBoard = ['X', '', '', '', '', '', '', '', '']
-            expect(playerPlacesHisMarkOnTheBoard(ticTacToeBoard, 'X', 0)).toEqual(false)
+        describe('When an empty cell has been found, the player places his mark', () => {
+            it('Player X places his mark in the first cell', () => {
+                var ticTacToeBoard = ['', '', '', '', '', '', '', '', '']
+                expect(playerPlacesHisMarkOnTheBoard(ticTacToeBoard, 'X', 0)).toEqual(['X', '', '', '', '', '', '', '', ''])
+            });
+            it('Player O places his mark in the bottom right cell', () => {
+                var ticTacToeBoard = ['', '', '', '', '', '', '', '', '']
+                expect(playerPlacesHisMarkOnTheBoard(ticTacToeBoard, 'O', 8)).toEqual(['', '', '', '', '', '', '', '', 'O'])
+            });
+            it('Player X cannot place his mark in cell 1, because it is not empty', () => {
+                var ticTacToeBoard = ['X', '', '', '', '', '', '', '', '']
+                expect(playerPlacesHisMarkOnTheBoard(ticTacToeBoard, 'X', 0)).toEqual(false)
+            });
         });
     });
     describe('When a player has placed his mark, the turn switches to the other player', () => {

@@ -99,4 +99,8 @@ Overview of atomic behaviors:
     ✔- ['X', 'O', X', 'O', 'X', 'X', O', X', 'O'] --> draw
     ✔- ['X', 'O', X', '', 'X', 'X', O', X', 'O'] --> no draw
 
+- Find a random empty cell to place a mark on
+    ✔ - empty board --> >= 0 && <= 8
+    - ['X', 'O', X', '', 'X', 'X', O', X', 'O'] --> 3
+
 - Print the board in the console log
