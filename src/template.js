@@ -18,7 +18,10 @@ function switchCurrentPlayer(currentPlayer) {
 }
 
 function checkVerticalLineForAWinner(ticTacToeBoard, currentPlayer){
-    return 'Player X has won'
+    if (ticTacToeBoard[0] == currentPlayer && ticTacToeBoard[3] == currentPlayer && ticTacToeBoard[6] == currentPlayer ||
+        ticTacToeBoard[1] == currentPlayer && ticTacToeBoard[4] == currentPlayer && ticTacToeBoard[7] == currentPlayer){
+        return 'Player ' + currentPlayer + ' has won'
+    }
 }
 
 module.exports = {createAnEmptyTicTacToeBoard, playerPlacesHisMarkOnTheBoard, switchCurrentPlayer, checkVerticalLineForAWinner}

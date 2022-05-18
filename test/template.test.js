@@ -33,10 +33,15 @@ describe('This is a testsuite that describes the working of a game called TicTac
     });
     describe('If one of the following situations occurs, a player has won the game', () => {
         describe('When a vertical line on the board only contains the marks of a certain player', () => {
-            it('first ⬇ with X marks --> X wins', () => {
+            it('Second ⬇ with X marks --> X wins', () => {
                 var ticTacToeBoard = ['X', '', '', 'X', '', '', 'X', '', '']
                 var currentPlayer = 'X'
                 expect(checkVerticalLineForAWinner(ticTacToeBoard, currentPlayer)).toEqual('Player X has won')
+            });
+            it('Second ⬇ with O marks --> O wins', () => {
+                var ticTacToeBoard = ['', 'O', '', '', 'O', '', '', 'O', '']
+                var currentPlayer = 'O'
+                expect(checkVerticalLineForAWinner(ticTacToeBoard, currentPlayer)).toEqual('Player O has won')
             });
         });
     });
