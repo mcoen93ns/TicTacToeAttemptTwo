@@ -101,6 +101,11 @@ Overview of atomic behaviors:
 
 - Find a random empty cell to place a mark on
     ✔ - empty board --> >= 0 && <= 8
-    - ['X', 'O', X', '', 'X', 'X', O', X', 'O'] --> 3
+    ✔- ['X', 'O', X', 'X', '', 'X', O', X', 'O'] --> 4
 
 - Print the board in the console log
+    - hello world
+    - ['X','','','X','','','X','','']
+    - XXX 
+      OOO   
+      XXX   

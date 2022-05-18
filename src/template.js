@@ -4,7 +4,7 @@ function createAnEmptyTicTacToeBoard(emptyTicTacToeBoard) {
 }
 
 function findAnEmptyCellOnTheBoard(ticTacToeBoard){
-    return 2
+    return ticTacToeBoard.indexOf('')
 }
 
 function playerPlacesHisMarkOnTheBoard(ticTacToeBoard, playerMark, cellOnTheBoard){

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1652876950800" clover="3.2.0">
-  <project timestamp="1652876950800" name="All files">
+<coverage generated="1652877123122" clover="3.2.0">
+  <project timestamp="1652877123122" name="All files">
     <metrics statements="23" coveredstatements="23" conditionals="36" coveredconditionals="36" methods="8" coveredmethods="8" elements="67" coveredelements="67" complexity="0" loc="23" ncloc="23" packages="1" files="1" classes="1"/>
     <file name="template.js" path="C:\Users\mathi\TicTacToeAttemptTwo\src\template.js">
       <metrics statements="23" coveredstatements="23" conditionals="36" coveredconditionals="36" methods="8" coveredmethods="8"/>
       <line num="2" count="1" type="stmt"/>
       <line num="3" count="1" type="stmt"/>
-      <line num="7" count="1" type="stmt"/>
+      <line num="7" count="2" type="stmt"/>
       <line num="11" count="3" type="cond" truecount="2" falsecount="0"/>
       <line num="12" count="2" type="stmt"/>
       <line num="13" count="2" type="stmt"/>

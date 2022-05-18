@@ -15,6 +15,11 @@ describe('This is a testsuite that describes the working of a game called TicTac
                 var correctValueFound = (emptyCell >= 0 && emptyCell <= 8)
                 expect(correctValueFound).toEqual(true)
             });
+            it('Only cell 5 is available --> found', () => {
+                var ticTacToeBoard = ['X', 'O', 'X', 'O', '', 'X', 'O', 'X', 'O']
+                var emptyCell = findAnEmptyCellOnTheBoard(ticTacToeBoard)
+                expect(emptyCell).toEqual(4)
+            });
         });
         describe('When an empty cell has been found, the player places his mark', () => {
             it('Player X places his mark in the first cell', () => {
