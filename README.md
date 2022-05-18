@@ -106,7 +106,6 @@ Overview of atomic behaviors:
 
 - Print the board in the console log
     ✔- hello world
-    - ['X','','','X','','','X','','']
-    - XXX 
-      OOO   
-      XXX   
+    🛠- XXX 
+        OOO   
+        XXX   

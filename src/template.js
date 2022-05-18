@@ -55,4 +55,26 @@ function printTheTicTacToeBoardInTheLog(ticTacToeBoard){
     return 'success'
 }
 
-module.exports = {createAnEmptyTicTacToeBoard, findAnEmptyCellOnTheBoard, playerPlacesHisMarkOnTheBoard, switchCurrentPlayer, checkVerticalLineForAWinner, checkHorizontalLineForAWinner, checkDiagonalLineForAWinner, checkForDraw, printTheTicTacToeBoardInTheLog}
+function playTicTacToe(ticTacToeBoard){
+    currentPlayer = 'X';
+    isThereAWinner = false
+    isDraw = false
+    while (isThereAWinner == false && isDraw == false) {
+        emptyCellOnTheBoard = findAnEmptyCellOnTheBoard(ticTacToeBoard);
+        playerPlacesHisMarkOnTheBoard(ticTacToeBoard, currentPlayer, emptyCellOnTheBoard);
+        if (checkVerticalLineForAWinner(ticTacToeBoard, currentPlayer) == 'Player ' + currentPlayer + ' has won') {
+            isThereAWinner == true
+        } if (checkHorizontalLineForAWinner(ticTacToeBoard, currentPlayer) == 'Player ' + currentPlayer + ' has won') {
+            isThereAWinner == true
+        } if (checkDiagonalLineForAWinner(ticTacToeBoard, currentPlayer) == 'Player ' + currentPlayer + ' has won') {
+            isThereAWinner == true
+        } if (checkForDraw(ticTacToeBoard) == 'Draw') {
+            isDraw = true
+        } currentPlayer = switchCurrentPlayer(currentPlayer)
+        console.log(ticTacToeBoard)
+    } if (isThereAWinner) {
+        return 'Player ' + currentPlayer + ' has won'
+    } else return 'Draw'
+}
+
+module.exports = {createAnEmptyTicTacToeBoard, findAnEmptyCellOnTheBoard, playerPlacesHisMarkOnTheBoard, switchCurrentPlayer, checkVerticalLineForAWinner, checkHorizontalLineForAWinner, checkDiagonalLineForAWinner, checkForDraw, printTheTicTacToeBoardInTheLog, playTicTacToe}

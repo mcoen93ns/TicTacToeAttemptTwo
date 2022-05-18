@@ -1,4 +1,4 @@
-const {createAnEmptyTicTacToeBoard, playerPlacesHisMarkOnTheBoard, switchCurrentPlayer, checkVerticalLineForAWinner, checkHorizontalLineForAWinner, checkDiagonalLineForAWinner, checkForDraw, findAnEmptyCellOnTheBoard, printTheTicTacToeBoardInTheLog} = require('../src/template');
+const {createAnEmptyTicTacToeBoard, playerPlacesHisMarkOnTheBoard, switchCurrentPlayer, checkVerticalLineForAWinner, checkHorizontalLineForAWinner, checkDiagonalLineForAWinner, checkForDraw, findAnEmptyCellOnTheBoard, printTheTicTacToeBoardInTheLog, playTicTacToe} = require('../src/template');
 
 describe('This is a testsuite that describes the working of a game called TicTacToe', () => {
     describe('An empty game board needs to be created, so that we can play on it', () => {
@@ -125,6 +125,15 @@ describe('This is a testsuite that describes the working of a game called TicTac
                 var ticTacToeBoard = 'hello world'
                 expect(printTheTicTacToeBoardInTheLog(ticTacToeBoard)).toEqual('success')
             });
+            it('XXXOOOXXX in 3 rows', () => {
+                var ticTacToeBoard = ['X', 'X', 'X', 'O', 'O', 'O', 'X', 'X', 'X']
+                expect(printTheTicTacToeBoardInTheLog(ticTacToeBoard)).toEqual('success')
+            });
+        });
+        describe('At the end of the game, a winner should be found or a draw determined', () => {
+            var ticTacToeBoard = ['', '', '', '', '', '', '', '', '']
+            var outcomeOfTheGame = playTicTacToe(ticTacToeBoard)
+            expect(outcomeOfTheGame).toEqual('Draw')
         });
     });
 });
