@@ -50,4 +50,9 @@ function checkForDraw(ticTacToeBoard){
     } else return 'No draw'
 }
 
-module.exports = {createAnEmptyTicTacToeBoard, findAnEmptyCellOnTheBoard, playerPlacesHisMarkOnTheBoard, switchCurrentPlayer, checkVerticalLineForAWinner, checkHorizontalLineForAWinner, checkDiagonalLineForAWinner, checkForDraw}
+function printTheTicTacToeBoardInTheLog(ticTacToeBoard){
+    console.log(ticTacToeBoard)
+    return 'success'
+}
+
+module.exports = {createAnEmptyTicTacToeBoard, findAnEmptyCellOnTheBoard, playerPlacesHisMarkOnTheBoard, switchCurrentPlayer, checkVerticalLineForAWinner, checkHorizontalLineForAWinner, checkDiagonalLineForAWinner, checkForDraw, printTheTicTacToeBoardInTheLog}

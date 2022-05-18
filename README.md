@@ -105,7 +105,7 @@ Overview of atomic behaviors:
     - REFACTOR TO BE TRULY RANDOM
 
 - Print the board in the console log
-    🛠- hello world
+    ✔- hello world
     - ['X','','','X','','','X','','']
     - XXX 
       OOO   

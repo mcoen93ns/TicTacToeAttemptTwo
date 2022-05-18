@@ -8,8 +8,9 @@ FN:24,checkVerticalLineForAWinner
 FN:32,checkHorizontalLineForAWinner
 FN:40,checkDiagonalLineForAWinner
 FN:47,checkForDraw
-FNF:8
-FNH:8
+FN:53,printTheTicTacToeBoardInTheLog
+FNF:9
+FNH:9
 FNDA:1,createAnEmptyTicTacToeBoard
 FNDA:2,findAnEmptyCellOnTheBoard
 FNDA:3,playerPlacesHisMarkOnTheBoard
@@ -18,6 +19,7 @@ FNDA:4,checkVerticalLineForAWinner
 FNDA:4,checkHorizontalLineForAWinner
 FNDA:3,checkDiagonalLineForAWinner
 FNDA:2,checkForDraw
+FNDA:1,printTheTicTacToeBoardInTheLog
 DA:2,1
 DA:3,1
 DA:7,2
@@ -40,9 +42,11 @@ DA:44,1
 DA:48,2
 DA:49,1
 DA:50,1
-DA:53,1
-LF:23
-LH:23
+DA:54,1
+DA:55,1
+DA:58,1
+LF:25
+LH:25
 BRDA:11,0,0,2
 BRDA:11,0,1,1
 BRDA:18,1,0,1

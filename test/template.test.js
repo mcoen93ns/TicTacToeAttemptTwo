@@ -1,4 +1,4 @@
-const {createAnEmptyTicTacToeBoard, playerPlacesHisMarkOnTheBoard, switchCurrentPlayer, checkVerticalLineForAWinner, checkHorizontalLineForAWinner, checkDiagonalLineForAWinner, checkForDraw, findAnEmptyCellOnTheBoard} = require('../src/template');
+const {createAnEmptyTicTacToeBoard, playerPlacesHisMarkOnTheBoard, switchCurrentPlayer, checkVerticalLineForAWinner, checkHorizontalLineForAWinner, checkDiagonalLineForAWinner, checkForDraw, findAnEmptyCellOnTheBoard, printTheTicTacToeBoardInTheLog} = require('../src/template');
 
 describe('This is a testsuite that describes the working of a game called TicTacToe', () => {
     describe('An empty game board needs to be created, so that we can play on it', () => {
@@ -121,7 +121,10 @@ describe('This is a testsuite that describes the working of a game called TicTac
     });
     describe('The game is being played', () => {
         describe('The game board should be visible in the logging', () => {
-            
+            it('Lets start with hello world to test if it works', () => {
+                var ticTacToeBoard = 'hello world'
+                expect(printTheTicTacToeBoardInTheLog(ticTacToeBoard)).toEqual('success')
+            });
         });
     });
 });
