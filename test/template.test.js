@@ -1,4 +1,4 @@
-const {createAnEmptyTicTacToeBoard, playerPlacesHisMarkOnTheBoard, switchCurrentPlayer, checkVerticalLineForAWinner} = require('../src/template');
+const {createAnEmptyTicTacToeBoard, playerPlacesHisMarkOnTheBoard, switchCurrentPlayer, checkVerticalLineForAWinner, checkHorizontalLineForAWinner} = require('../src/template');
 
 describe('This is a testsuite that describes the working of a game called TicTacToe', () => {
     describe('An empty game board needs to be created, so that we can play on it', () => {
@@ -52,6 +52,13 @@ describe('This is a testsuite that describes the working of a game called TicTac
                 var ticTacToeBoard = ['', '', '', '', '', 'X', '', '', 'X']
                 var currentPlayer = 'X'
                 expect(checkVerticalLineForAWinner(ticTacToeBoard, currentPlayer)).toEqual('No winner found')
+            });
+        });
+        describe('When a horizontal line on the board only contains the marks of a certain player', () => {
+            it('First ➡ with X marks --> X wins', () => {
+                var ticTacToeBoard = ['X', 'X', 'X', '', '', '', '', '', '']
+                var currentPlayer = 'X'
+                expect(checkHorizontalLineForAWinner(ticTacToeBoard, currentPlayer)).toEqual('Player X has won')
             });
         });
     });
