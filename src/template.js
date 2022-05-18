@@ -1,5 +1,6 @@
-function templateFunction(x) {
-    return x / 2
+function createAnEmptyTicTacToeBoard(emptyTicTacToeBoard) {
+    emptyTicTacToeBoard = ['', '', '', '', '', '', '', '', ''];
+    return emptyTicTacToeBoard
 }
 
-module.exports = templateFunction
+module.exports = createAnEmptyTicTacToeBoard

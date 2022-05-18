@@ -1,7 +1,10 @@
-const templateFunction = require('../src/template');
+const createAnEmptyTicTacToeBoard = require('../src/template');
 
-describe('TemplateFunction should return half of the provided', () => {
-    it('2 -> 1 ', () => {
-        expect(templateFunction(2)).toEqual(1);        
+describe('This is a testsuite that describes the working of a game called TicTacToe', () => {
+    describe('An empty game board needs to be created, so that we can play on it', () => {
+        it('A board should contain 9 empty cells', () => {
+            var emptyTicTacToeBoard = ''
+            expect(createAnEmptyTicTacToeBoard(emptyTicTacToeBoard)).toEqual(['','','','','','','','',''])
+        });
     });
 });
