@@ -87,6 +87,11 @@ describe('This is a testsuite that describes the working of a game called TicTac
                 var currentPlayer = 'O'
                 expect(checkDiagonalLineForAWinner(ticTacToeBoard, currentPlayer)).toEqual('Player O has won')
             });
+            it('↘ incomplete with X marks --> no winner', () => {
+                var ticTacToeBoard = ['X', '', '', '', 'X', 'X', '', '', 'O']
+                var currentPlayer = 'X'
+                expect(checkDiagonalLineForAWinner(ticTacToeBoard, currentPlayer)).toEqual('No winner found')
+            });
         });
     });
 });
