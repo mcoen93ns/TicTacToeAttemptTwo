@@ -12,5 +12,9 @@ describe('This is a testsuite that describes the working of a game called TicTac
             var ticTacToeBoard = ['', '', '', '', '', '', '', '', '']
             expect(playerPlacesHisMarkOnTheBoard(ticTacToeBoard, 'X', 0)).toEqual(['X', '', '', '', '', '', '', '', ''])
         });
+        it('Player O places his mark in the bottom right cell', () => {
+            var ticTacToeBoard = ['', '', '', '', '', '', '', '', '']
+            expect(playerPlacesHisMarkOnTheBoard(ticTacToeBoard, 'O', 8)).toEqual(['', '', '', '', '', '', '', '', 'O'])
+        });
     });
 });
