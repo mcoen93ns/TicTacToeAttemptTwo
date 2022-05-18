@@ -22,7 +22,7 @@ function checkVerticalLineForAWinner(ticTacToeBoard, currentPlayer){
         ticTacToeBoard[1] == currentPlayer && ticTacToeBoard[4] == currentPlayer && ticTacToeBoard[7] == currentPlayer ||
         ticTacToeBoard[2] == currentPlayer && ticTacToeBoard[5] == currentPlayer && ticTacToeBoard[8] == currentPlayer){
         return 'Player ' + currentPlayer + ' has won'
-    }
+    } else return 'No winner found'
 }
 
 module.exports = {createAnEmptyTicTacToeBoard, playerPlacesHisMarkOnTheBoard, switchCurrentPlayer, checkVerticalLineForAWinner}
