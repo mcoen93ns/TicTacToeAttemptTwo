@@ -3,4 +3,9 @@ function createAnEmptyTicTacToeBoard(emptyTicTacToeBoard) {
     return emptyTicTacToeBoard
 }
 
-module.exports = createAnEmptyTicTacToeBoard
+function playerPlacesHisMarkOnTheBoard(ticTacToeBoard, playerMark, cellOnTheBoard){
+    ticTacToeBoard[cellOnTheBoard] = playerMark
+    return ticTacToeBoard
+}
+
+module.exports = {createAnEmptyTicTacToeBoard, playerPlacesHisMarkOnTheBoard}
